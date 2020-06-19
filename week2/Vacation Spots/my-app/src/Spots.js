@@ -24,7 +24,6 @@ function Spots(props) {
             return "White"
         }
     }
-
     return (
         <div style={{backgroundColor: TimeOfYear(props.timeToGo)}}>
             <h2>{props.place} {sign(props.price)}</h2>

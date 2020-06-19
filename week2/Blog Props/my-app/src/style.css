@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.nav2 {
+    height: 250px;
+    background-color:grey;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    display: grid;
+    justify-content: center;
+    align-items: top;
+}
+.nav2, h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.topNav a {
+    text-align: center;
+    font-size: 30px;
+    display: inline;
+    align-items: right;
+    font-size: 10px;
+    text-decoration-color: black;
+}
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
