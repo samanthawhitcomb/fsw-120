@@ -13,15 +13,7 @@ class App extends React.Component {
           square1: {color:DEFAULT_COLOR},
           square2: {color:DEFAULT_COLOR}, 
           square3: {color:DEFAULT_COLOR},
-          square4: {color:DEFAULT_COLOR}, 
-          button1: {visibility: "visible"},
-          button2: {visibility: "visible"},
-          button3: {visibility: "visible"},
-          button4: {visibility: "visible"},
-          button5: {visibility: "visible"},
-          button6: {visibility: "visible"},
-          button7: {visibility: "visible"},
-          button8: {visibility: "visible"}
+          square4: {color:DEFAULT_COLOR}
         };
       }
 
@@ -35,11 +27,7 @@ class App extends React.Component {
   blue = (event) => {
       const currentSquare = 'square'+event.target.id;
       return (
-      this.setState({[currentSquare]: {color: "blue"}}),
-      this.setState({button5: {visibility: "visible"}}),
-      this.setState({button6: {visibility: "visible"}}),
-      this.setState({button7: {visibility: "visible"}}),
-      this.setState({button8: {visibility: "visible"}}))
+      this.setState({[currentSquare]: {color: "blue"}}))
   }
 
 
@@ -49,8 +37,7 @@ class App extends React.Component {
         this.setState({square1: {color: "black"}}),
         this.setState({square2: {color: "black"}}),
         this.setState({square3: {color: "black"}}),
-        this.setState({square4: {color: "black"}}),
-        this.setState({button2: {visibility: "visible"}})
+        this.setState({square4: {color: "black"}})
       )
     } 
     if (this.state.square1.color !== "white") {
@@ -103,25 +90,21 @@ class App extends React.Component {
         <div className="gridContainer">
           <button id="1" 
             className="button" 
-            style={this.state.button1} 
             onClick={this.blackOrWhite}>
               Small Time DJ
           </button>       
           <button id="2" 
-            className="button" 
-            style={this.state.button2} 
+            className="button"  
             onClick={this.purple}>
               Party DJ
           </button>         
           <button id="3" 
-            className="button" 
-            style={this.state.button3} 
+            className="button"  
             onClick={this.blue}>
               Professional DJ Left
           </button>
           <button id="4" 
-            className="button" 
-            style={this.state.button4} 
+            className="button"  
             onClick={this.blue}>
               Professional DJ Right
           </button>
@@ -129,25 +112,21 @@ class App extends React.Component {
         <div className="gridContainer">
           <button id="1" 
             className="button" 
-            style={this.state.button5}
             onClick={this.onChangeColorEvent}>
               Big Time DJ 1
           </button>
           <button id="2" 
             className="button" 
-            style={this.state.button6} 
             onClick={this.onChangeColorEvent}>
               Big Time DJ 2
           </button>
           <button id="3" 
             className="button" 
-            style={this.state.button7} 
             onClick={this.onChangeColorEvent}>
               Big Time DJ 3
           </button>
           <button id="4" 
             className="button" 
-            style={this.state.button8} 
             onClick={this.onChangeColorEvent}>
               Big Time DJ 4
           </button>
